@@ -7,11 +7,11 @@
         android:layout_height="wrap_content"
         android:icon="@drawable/ic_dashboard_black_24dp"
         android:title="@string/title_medical_problem" />
+
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_home_black_24dp"
         android:title="@string/title_profile" />
-
     <item
         android:id="@+id/navigation_medication"
         android:icon="@drawable/ic_launcher_foreground"
