@@ -6,14 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".ui.profile.ProfileFragment">
 
-    <Button
-        android:id="@+id/dateButton"
+    <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="153dp"
-        android:text="Select Date"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/border"
+        android:scaleX="1.4"
+        android:scaleY="1.4"
+        android:text="12 13 14 15 16 17 18 19 20 21"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment_activity_main" />
 </androidx.constraintlayout.widget.ConstraintLayout>

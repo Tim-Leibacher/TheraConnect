@@ -31,13 +31,9 @@ class ProfileFragment : Fragment() {
     ): View? {
         val rootView = inflater.inflate(R.layout.fragment_home, container, false)
 
-        val tempDateButton = rootView.findViewById<Button>(R.id.dateButton)
 
         viewModel = ViewModelProvider(this)[ProfileViewModel::class.java]
 
-        tempDateButton?.setOnClickListener {
-            showDatePicker()
-        }
 
         return rootView
     }
