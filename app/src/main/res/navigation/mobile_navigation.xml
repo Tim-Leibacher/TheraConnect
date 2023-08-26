@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_diagnostics">
+
+    <fragment
+        android:id="@+id/navigation_diagnostics"
+        android:name="ch.leibacher.theraconnect.ui.diagnostics.DiagnosticsFragment"
+        android:label="@string/title_diagnostics"
+        tools:layout="@layout/fragment_diagnose" />
+
+    <fragment
+        android:id="@+id/navigation_medical_problem"
+        android:name="ch.leibacher.theraconnect.ui.medical_problem.MedicalProblemFragment"
+        android:label="@string/title_medical_problem"
+        tools:layout="@layout/fragment_medical_problem" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="ch.leibacher.theraconnect.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/navigation_medication"
+        android:name="ch.leibacher.theraconnect.ui.medication.MedicationFragment"
+        android:label="@string/title_medication"
+        tools:layout="@layout/fragment_dashboard" />
+</navigation>
