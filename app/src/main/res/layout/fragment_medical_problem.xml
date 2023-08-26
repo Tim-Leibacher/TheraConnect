@@ -43,6 +43,45 @@
                 android:layout_height="wrap_content"
                 android:hint="Enter your answer here"/>
 
+            <!-- Question 3 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medical Location of pain:"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTextAnswer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your answer here"/>
+
+            <!-- Question 4 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pain on a scale from 1 - 10:"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTextAnswer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your answer here"/>
+
+            <!-- Question 5 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Possible reasons:"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTextAnswer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your answer here"/>
+
 
 
         </LinearLayout>
