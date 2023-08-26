@@ -9,4 +9,7 @@ class MedicalProblemViewModel : ViewModel() {
         value = "This is medical problem Fragment"
     }
     val text: LiveData<String> = _text
+
+
 }
+
