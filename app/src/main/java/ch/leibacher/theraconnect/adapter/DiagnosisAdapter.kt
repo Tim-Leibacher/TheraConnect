@@ -5,9 +5,16 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import ch.leibacher.theraconnect.R
 
-class DiagnosisAdapter(private val itemList: List<DiagnosisItem>) : RecyclerView.Adapter<DiagnosisAdapter.ViewHolder>() {
+class DiagnosisAdapter(private val itemList: List<DiagnosisItem>,
+                       private val onItemClick: (DiagnosisItem) -> Unit) :
+    RecyclerView.Adapter<DiagnosisAdapter.ViewHolder>() {
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        fun bind(item: DiagnosisItem) {
+            textDiagnose.text = item.diagnose
+            textMedicament.text = item.medicaments.joinToString(", ")
+        }
+
         val textDiagnose: TextView = itemView.findViewById(R.id.textDiagnose)
         val textMedicament: TextView = itemView.findViewById(R.id.textMedicament)
     }
@@ -20,6 +27,8 @@ class DiagnosisAdapter(private val itemList: List<DiagnosisItem>) : RecyclerView
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = itemList[position]
         holder.textDiagnose.text = item.diagnose
+        holder.bind(item)
+        holder.itemView.setOnClickListener { onItemClick(item) }
         if (item.medicaments.isNotEmpty()){
             holder.textMedicament.text = item.medicaments.joinToString(", ")
         } else {

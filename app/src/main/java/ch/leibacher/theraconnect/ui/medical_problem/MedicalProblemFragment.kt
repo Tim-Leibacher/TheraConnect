@@ -30,10 +30,7 @@ class MedicalProblemFragment : Fragment() {
         _binding = FragmentMedicalProblemBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-//        val textView: TextView = binding.textDashboard
-//        medicalProblemView.text.observe(viewLifecycleOwner) {
-//            textView.text = it
-//        }
+
         return root
     }
 
