@@ -6,13 +6,19 @@ android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context=".ui.medical_problem.MedicalProblemFragment">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="161dp"
-        android:layout_marginBottom="346dp"
-        android:text="Button"
+    <jp.wasabeef.richeditor.RichEditor
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/richEditor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </jp.wasabeef.richeditor.RichEditor>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
