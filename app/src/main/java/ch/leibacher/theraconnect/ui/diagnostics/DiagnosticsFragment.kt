@@ -1,7 +1,6 @@
 package ch.leibacher.theraconnect.ui.diagnostics
 
 import DiagnosisAdapter
-import DiagnosisDetailFragment
 import DiagnosisItem
 import android.R
 import android.app.AlertDialog
